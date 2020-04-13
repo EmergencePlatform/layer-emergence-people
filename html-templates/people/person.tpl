@@ -47,7 +47,7 @@
                     <dt>Email</dt>
                     <dd><a href="mailto:{$Person->Email}" title="Email {personName $Person}">{$Person->Email}</a></dd>
                 {/if}
-
+    
                 {if $Person->Phone}
                     <dt>Phone</dt>
                     <dd><a href="tel:{$Person->Phone|escape:url}">{$Person->Phone|phone}</a></dd>

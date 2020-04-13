@@ -29,13 +29,13 @@
             {/if}
         {/foreach}
 
-        <input type="hidden" name="_LOGIN[returnMethod]" value="{refill field=_LOGIN.returnMethod default=$.server.REQUEST_METHOD}">
-        <input type="hidden" name="_LOGIN[return]" value="{refill field=_LOGIN.return default=$.server.REQUEST_URI}">
-
+        <input type="hidden" name="_LOGIN[returnMethod]" value="{refill field=_LOGIN.returnMethod default=$.server.REQUEST_METHOD}">    
+        <input type="hidden" name="_LOGIN[return]" value="{refill field=_LOGIN.return default=$.server.REQUEST_URI}">   
+    
         <fieldset class="shrink">
             {loginField}
             {passwordField}
-
+            
             <div class="submit-area">
                 <button type="submit">Log In</button>
                 {if Emergence\People\RegistrationRequestHandler::$enableRegistration}
